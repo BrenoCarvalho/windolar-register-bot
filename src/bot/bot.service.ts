@@ -84,7 +84,7 @@ _Se o problema continuar, entre em contato com o suporte\\._`,
 
     await this.commands.registryCommands();
 
-    this.client.launch();
+    await this.client.launch();
   }
 
   async start() {
@@ -94,7 +94,7 @@ _Se o problema continuar, entre em contato com o suporte\\._`,
     try {
       this.logger.log('Starting bot...');
       await this.setupTelegramClient();
-      this.logger.log('Bot started as successfully!');
+      // this.logger.log('Bot started as successfully!');
     } catch (error) {
       this.logger.error(error);
       throw error;
